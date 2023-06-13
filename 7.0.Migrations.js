@@ -31,7 +31,7 @@ HERE WE ARE GOING TO DISCUSS MANAUAL MIGRATIONS, WHICH IS THE RECOMMNEBED WAY TO
 Install Knex.js: In your projects root directory, run the following command to install Knex.js as a dependency:
 
 Copy code
-npm install knex
+npm install knex pg
 2.Configure Knex.js: Create a Knex.js configuration file, usually named knexfile.js, in your project's root directory.
 This file defines the database connection settings and other configuration options for Knex.js.
 Heres an example configuration for a PostgreSQL database:
