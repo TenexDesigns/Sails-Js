@@ -28,13 +28,13 @@ HERE WE ARE GOING TO DISCUSS MANAUAL MIGRATIONS, WHICH IS THE RECOMMNEBED WAY TO
 
 1.To use Knex.js for manual migrations and changes to the database, you can follow these steps:
 
-Install Knex.js: In your project's root directory, run the following command to install Knex.js as a dependency:
+Install Knex.js: In your projects root directory, run the following command to install Knex.js as a dependency:
 
 Copy code
 npm install knex
 2.Configure Knex.js: Create a Knex.js configuration file, usually named knexfile.js, in your project's root directory.
 This file defines the database connection settings and other configuration options for Knex.js.
-Here's an example configuration for a PostgreSQL database:
+Heres an example configuration for a PostgreSQL database:
 
 
 module.exports = {
@@ -88,8 +88,6 @@ Verify database changes: Check your PostgreSQL database to confirm that the user
 
 Rollback migrations: To revert the last migration, you can use the Knex.js command-line tool with the following command:
 
-sql
-Copy code
 npx knex migrate:rollback --env development
 This command will undo the last migration, rolling back the changes made to the database.
 
