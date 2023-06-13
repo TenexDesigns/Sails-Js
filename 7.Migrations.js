@@ -1,4 +1,6 @@
-Sails.js does not have built-in support for database migrations like some other frameworks (e.g., Ruby on Rails or Laravel). However, you can still manage database schema changes manually or by using third-party packages. Here's how you can handle migrations in Sails.js:
+Sails.js does not have built-in support for database migrations like some other frameworks (e.g., Ruby on Rails or Laravel).
+However, you can still manage database schema changes manually or by using third-party packages.
+Heres how you can handle migrations in Sails.js:
 
 Manually managing migrations:
 
