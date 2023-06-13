@@ -3,13 +3,12 @@ To use the sails-migrations package for handling migrations in your Sails.js app
 Install the package:
 
 In your Sails.js project's root directory, run the following command:
-Copy code
+
 npm install sails-migrations
 Configure the package:
 
-Open the config/migrations.js file (create it if it doesn't exist) and configure the settings for the sails-migrations package. Here's an example configuration:
-javascript
-Copy code
+Open the config/migrations.js file (create it if it doesnt exist) and configure the settings for the sails-migrations package. Here's an example configuration:
+
 module.exports.migrations = {
   // Connection name
   connection: 'default',
@@ -34,9 +33,8 @@ Create migration files:
 
 Create migration files in the directory specified by the dir configuration in config/migrations.js.
 A migration file should contain up and down functions to define the changes to be applied and rolled back, respectively.
-Here's an example migration file that adds a new column to a table:
-javascript
-Copy code
+Heres an example migration file that adds a new column to a table:
+
 module.exports = {
   up: async function (knex) {
     await knex.schema.alterTable('users', function (table) {
@@ -54,13 +52,13 @@ Run migrations:
 
 To apply migrations, use the following command in your project's root directory:
 
-Copy code
+
 npx sails-migrations up
 This will run all pending migrations and update the database schema accordingly.
 
 To roll back migrations, you can use the following command:
 
-Copy code
+
 npx sails-migrations down
 This will roll back the last applied migration.
 
